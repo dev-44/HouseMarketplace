@@ -596,6 +596,7 @@ button {
 
 .messageForm {
   margin-top: 0.5rem;
+  max-width: 500px;
 }
 
 .messageDiv {
@@ -718,6 +719,7 @@ button {
 
 .formButtons {
   display: flex;
+
 }
 
 .formButton,
@@ -736,6 +738,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 600px;
 }
 .formButtonActive {
   background-color: #00cc66;
@@ -803,7 +806,10 @@ button {
 }
 
 .createListingButton {
+  margin: 0;
+  display: flex;
   margin-top: 5rem;
+  max-width: 500px;
 }
 
 .offers {
