@@ -42,12 +42,14 @@ button {
   font-size: 1rem;
 }
 @media (min-width: 1100px) {
-  .input,
   .passwordInput,
   .emailInput,
   .nameInput,
   .textarea {
     padding: 0 5rem;
+  }
+  .input {
+    width: 60%;
   }
 }
 
