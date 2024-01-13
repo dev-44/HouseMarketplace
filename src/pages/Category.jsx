@@ -49,6 +49,7 @@ function Category() {
                 setLoading(false)
             } catch (error) {
                 toast.error('Could not fetch listings')
+                setLoading(false)
             }
         }
 
@@ -59,7 +60,7 @@ function Category() {
     const onFetchMoreListings = async() => {
         try {
             //Get Reference
-            const listingsRef = collection(db, 'listings')
+            const listingsRef = collection(db, 'listing')
 
             //Create a query
             const q = query(
@@ -89,6 +90,7 @@ function Category() {
             setLoading(false)
         } catch (error) {
             toast.error('Could not fetch listings')
+            setLoading(false)
         }
     }
 

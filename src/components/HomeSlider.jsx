@@ -18,7 +18,7 @@ function HomeSlider() {
   useEffect(() => {
 
     const fetchListings = async() => {
-      const listingsRef = collection(db, 'listings')
+      const listingsRef = collection(db, 'listing')
       const q = query(listingsRef, orderBy('timestamp', 'desc'), limit(5))
       const querySnap = await getDocs(q)
   

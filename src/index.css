@@ -46,11 +46,10 @@ button {
   .passwordInput,
   .emailInput,
   .nameInput,
-  .showPassword {
-    right: 40%;
-  }
   .textarea {
     padding: 0 5rem;
+  }
+  .input {
     width: 60%;
   }
 }
