@@ -19,7 +19,7 @@ function Category() {
         const fetchListings = async() => {
             try {
                 //Get Reference
-                const listingsRef = collection(db, 'listings')
+                const listingsRef = collection(db, 'listing')
 
                 //Create a query
                 const q = query(
