@@ -32,11 +32,10 @@ function HomeSlider() {
       })
   
       setListings(listings)
-      
+      setLoading(false)
     }
 
     fetchListings()
-    setLoading(false)
   }, [])
 
 
