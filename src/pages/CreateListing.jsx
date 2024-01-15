@@ -173,7 +173,7 @@ function CreateListing() {
         !formDataCopy.offer && delete formDataCopy.discountedPrice
 
         //Save to the Database
-        const docRef = await addDoc(collection(db, 'listing'), formDataCopy)
+        const docRef = await addDoc(collection(db, 'listings'), formDataCopy)
 
         setLoading(false)
 
