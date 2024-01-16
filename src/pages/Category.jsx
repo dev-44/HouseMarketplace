@@ -49,7 +49,6 @@ function Category() {
                 setLoading(false)
             } catch (error) {
                 toast.error('Could not fetch listings')
-                setLoading(false)
             }
         }
 
@@ -90,7 +89,6 @@ function Category() {
             setLoading(false)
         } catch (error) {
             toast.error('Could not fetch listings')
-            setLoading(false)
         }
     }
 
