@@ -20,6 +20,7 @@ function Category() {
             try {
                 //Get Reference
                 const listingsRef = collection(db, 'listings')
+                console.log(listingsRef)
 
                 //Create a query
                 const q = query(
@@ -30,6 +31,7 @@ function Category() {
 
                 //Execute Query
                 const querySnap = await getDocs(q)
+                console.log(querySnap)
 
                 //Pagination
                 const lastVisible = querySnap.docs[querySnap.docs.length -1]
@@ -44,6 +46,8 @@ function Category() {
                         data: doc.data()
                     })
                 })
+
+                console.log(listings)
 
                 setListings(listings)
                 setLoading(false)
