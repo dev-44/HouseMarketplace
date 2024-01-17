@@ -18,7 +18,7 @@ function Offers() {
             try {
                 //Get Reference
                 const listingsRef = collection(db, 'listings')
-
+                
                 //Create a query
                 const q = query(
                     listingsRef, 
@@ -60,7 +60,7 @@ function Offers() {
         try {
             //Get Reference
             const listingsRef = collection(db, 'listings')
-
+            
             //Create a query
             const q = query(
                 listingsRef, 

@@ -21,7 +21,6 @@ function Category() {
                 //Get Reference
                 const listingsRef = collection(db, 'listings')
                 console.log(listingsRef)
-
                 //Create a query
                 const q = query(
                     listingsRef, 
@@ -31,7 +30,6 @@ function Category() {
 
                 //Execute Query
                 const querySnap = await getDocs(q)
-                console.log(querySnap)
 
                 //Pagination
                 const lastVisible = querySnap.docs[querySnap.docs.length -1]
@@ -47,16 +45,14 @@ function Category() {
                     })
                 })
 
-                console.log(listings)
-
                 setListings(listings)
                 setLoading(false)
             } catch (error) {
+                console.error(error)
                 toast.error('Could not fetch listings')
                 setLoading(false)
             }
         }
-
         fetchListings()
     }, [params.categoryName])
 
