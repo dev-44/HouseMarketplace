@@ -104,7 +104,8 @@ function CreateListing() {
         } else {
             geolocation.lat = latitude
             geolocation.lng = longitude
-            //location = address            formatted_address is not always accurate
+            // formatted_address is not always accurate
+            // location = address            
         }
 
         //Store Images in Firebase
